@@ -18,8 +18,8 @@ from typing_extensions import Annotated
 
 from typing import Optional
 from uuid import UUID
-from wizipet_api.models.list_response_pense_betes_pense_bete_item_dto import ListResponsePenseBetesPenseBeteItemDto
 from wizipet_api.models.pense_betes_patch_pense_bete_dto import PenseBetesPatchPenseBeteDto
+from wizipet_api.models.wp_list_response_pense_betes_pense_bete_item_dto import WpListResponsePenseBetesPenseBeteItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_pense_betes_pense_bete_dto import WpResponsePenseBetesPenseBeteDto
 
@@ -57,7 +57,7 @@ class FrontPenseBeteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponsePenseBetesPenseBeteItemDto:
+    ) -> WpListResponsePenseBetesPenseBeteItemDto:
         """api_v1_front_profile_pet_id_santes_pensebetes_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -95,7 +95,7 @@ class FrontPenseBeteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePenseBetesPenseBeteItemDto",
+            '200': "WpListResponsePenseBetesPenseBeteItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -126,7 +126,7 @@ class FrontPenseBeteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponsePenseBetesPenseBeteItemDto]:
+    ) -> ApiResponse[WpListResponsePenseBetesPenseBeteItemDto]:
         """api_v1_front_profile_pet_id_santes_pensebetes_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -164,7 +164,7 @@ class FrontPenseBeteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePenseBetesPenseBeteItemDto",
+            '200': "WpListResponsePenseBetesPenseBeteItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -233,7 +233,7 @@ class FrontPenseBeteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePenseBetesPenseBeteItemDto",
+            '200': "WpListResponsePenseBetesPenseBeteItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }

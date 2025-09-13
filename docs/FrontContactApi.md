@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_contact_summary_get**
-> ListResponseContactsContactSummaryDto api_v1_front_profile_pet_id_contact_summary_get(pet_id)
+> WpListResponseContactsContactSummaryDto api_v1_front_profile_pet_id_contact_summary_get(pet_id)
 
 Error codes : 
   - PROFILE_NOT_FOUND: 
@@ -178,7 +178,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_contacts_contact_summary_dto import ListResponseContactsContactSummaryDto
+from wizipet_api.models.wp_list_response_contacts_contact_summary_dto import WpListResponseContactsContactSummaryDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -223,7 +223,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseContactsContactSummaryDto**](ListResponseContactsContactSummaryDto.md)
+[**WpListResponseContactsContactSummaryDto**](WpListResponseContactsContactSummaryDto.md)
 
 ### Authorization
 

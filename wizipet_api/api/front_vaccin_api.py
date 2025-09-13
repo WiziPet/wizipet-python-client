@@ -18,9 +18,9 @@ from typing_extensions import Annotated
 
 from typing import Optional
 from uuid import UUID
-from wizipet_api.models.list_response_vaccins_vaccination_item_dto import ListResponseVaccinsVaccinationItemDto
 from wizipet_api.models.vaccins_patch_vaccination_dto import VaccinsPatchVaccinationDto
 from wizipet_api.models.vaccins_post_vaccination_dto import VaccinsPostVaccinationDto
+from wizipet_api.models.wp_list_response_vaccins_vaccination_item_dto import WpListResponseVaccinsVaccinationItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_vaccins_list_vaccin_dto import WpResponseVaccinsListVaccinDto
 
@@ -58,7 +58,7 @@ class FrontVaccinApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseVaccinsVaccinationItemDto:
+    ) -> WpListResponseVaccinsVaccinationItemDto:
         """api_v1_front_profile_pet_id_santes_vaccinations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -96,7 +96,7 @@ class FrontVaccinApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseVaccinsVaccinationItemDto",
+            '200': "WpListResponseVaccinsVaccinationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -127,7 +127,7 @@ class FrontVaccinApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseVaccinsVaccinationItemDto]:
+    ) -> ApiResponse[WpListResponseVaccinsVaccinationItemDto]:
         """api_v1_front_profile_pet_id_santes_vaccinations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -165,7 +165,7 @@ class FrontVaccinApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseVaccinsVaccinationItemDto",
+            '200': "WpListResponseVaccinsVaccinationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -234,7 +234,7 @@ class FrontVaccinApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseVaccinsVaccinationItemDto",
+            '200': "WpListResponseVaccinsVaccinationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }

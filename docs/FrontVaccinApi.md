@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **api_v1_front_profile_pet_id_santes_vaccinations_get**
-> ListResponseVaccinsVaccinationItemDto api_v1_front_profile_pet_id_santes_vaccinations_get(pet_id)
+> WpListResponseVaccinsVaccinationItemDto api_v1_front_profile_pet_id_santes_vaccinations_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -22,7 +22,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_vaccins_vaccination_item_dto import ListResponseVaccinsVaccinationItemDto
+from wizipet_api.models.wp_list_response_vaccins_vaccination_item_dto import WpListResponseVaccinsVaccinationItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseVaccinsVaccinationItemDto**](ListResponseVaccinsVaccinationItemDto.md)
+[**WpListResponseVaccinsVaccinationItemDto**](WpListResponseVaccinsVaccinationItemDto.md)
 
 ### Authorization
 

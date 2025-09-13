@@ -679,7 +679,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_discussions_get**
-> ListResponseDiscussionsDiscussionItemDto api_v1_front_profile_pet_id_discussions_get(pet_id)
+> WpListResponseDiscussionsDiscussionItemDto api_v1_front_profile_pet_id_discussions_get(pet_id)
 
 
 
@@ -689,7 +689,7 @@ Name | Type | Description  | Notes
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_discussions_discussion_item_dto import ListResponseDiscussionsDiscussionItemDto
+from wizipet_api.models.wp_list_response_discussions_discussion_item_dto import WpListResponseDiscussionsDiscussionItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -734,7 +734,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseDiscussionsDiscussionItemDto**](ListResponseDiscussionsDiscussionItemDto.md)
+[**WpListResponseDiscussionsDiscussionItemDto**](WpListResponseDiscussionsDiscussionItemDto.md)
 
 ### Authorization
 

@@ -25,8 +25,8 @@ from wizipet_api.models.discussions_is_archived_dto import DiscussionsIsArchived
 from wizipet_api.models.discussions_patch_discussion_dto import DiscussionsPatchDiscussionDto
 from wizipet_api.models.discussions_post_message_dto import DiscussionsPostMessageDto
 from wizipet_api.models.discussions_put_message_read_dto import DiscussionsPutMessageReadDto
-from wizipet_api.models.list_response_discussions_discussion_item_dto import ListResponseDiscussionsDiscussionItemDto
 from wizipet_api.models.resumable_list_response_discussions_message_dto import ResumableListResponseDiscussionsMessageDto
+from wizipet_api.models.wp_list_response_discussions_discussion_item_dto import WpListResponseDiscussionsDiscussionItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_discussions_discussion_dto import WpResponseDiscussionsDiscussionDto
 
@@ -2465,7 +2465,7 @@ class FrontDiscussionApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseDiscussionsDiscussionItemDto:
+    ) -> WpListResponseDiscussionsDiscussionItemDto:
         """api_v1_front_profile_pet_id_discussions_get
 
         
@@ -2503,7 +2503,7 @@ class FrontDiscussionApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseDiscussionsDiscussionItemDto",
+            '200': "WpListResponseDiscussionsDiscussionItemDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(
@@ -2533,7 +2533,7 @@ class FrontDiscussionApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseDiscussionsDiscussionItemDto]:
+    ) -> ApiResponse[WpListResponseDiscussionsDiscussionItemDto]:
         """api_v1_front_profile_pet_id_discussions_get
 
         
@@ -2571,7 +2571,7 @@ class FrontDiscussionApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseDiscussionsDiscussionItemDto",
+            '200': "WpListResponseDiscussionsDiscussionItemDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(
@@ -2639,7 +2639,7 @@ class FrontDiscussionApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseDiscussionsDiscussionItemDto",
+            '200': "WpListResponseDiscussionsDiscussionItemDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(

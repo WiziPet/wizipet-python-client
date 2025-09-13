@@ -17,7 +17,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
 from uuid import UUID
-from wizipet_api.models.list_response_santes_historique_dto import ListResponseSantesHistoriqueDto
+from wizipet_api.models.wp_list_response_santes_historique_dto import WpListResponseSantesHistoriqueDto
 
 from wizipet_api.api_client import ApiClient, RequestSerialized
 from wizipet_api.api_response import ApiResponse
@@ -53,7 +53,7 @@ class FrontHistoriqueApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesHistoriqueDto:
+    ) -> WpListResponseSantesHistoriqueDto:
         """api_v1_front_profile_pet_id_historiques_activite_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -91,7 +91,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -122,7 +122,7 @@ class FrontHistoriqueApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesHistoriqueDto]:
+    ) -> ApiResponse[WpListResponseSantesHistoriqueDto]:
         """api_v1_front_profile_pet_id_historiques_activite_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -160,7 +160,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -229,7 +229,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -322,7 +322,7 @@ class FrontHistoriqueApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesHistoriqueDto:
+    ) -> WpListResponseSantesHistoriqueDto:
         """api_v1_front_profile_pet_id_historiques_alimentations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -360,7 +360,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -391,7 +391,7 @@ class FrontHistoriqueApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesHistoriqueDto]:
+    ) -> ApiResponse[WpListResponseSantesHistoriqueDto]:
         """api_v1_front_profile_pet_id_historiques_alimentations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -429,7 +429,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -498,7 +498,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -591,7 +591,7 @@ class FrontHistoriqueApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesHistoriqueDto:
+    ) -> WpListResponseSantesHistoriqueDto:
         """api_v1_front_profile_pet_id_historiques_poids_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -629,7 +629,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -660,7 +660,7 @@ class FrontHistoriqueApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesHistoriqueDto]:
+    ) -> ApiResponse[WpListResponseSantesHistoriqueDto]:
         """api_v1_front_profile_pet_id_historiques_poids_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -698,7 +698,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -767,7 +767,7 @@ class FrontHistoriqueApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesHistoriqueDto",
+            '200': "WpListResponseSantesHistoriqueDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }

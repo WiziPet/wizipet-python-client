@@ -18,9 +18,9 @@ from typing_extensions import Annotated
 
 from typing import Optional
 from uuid import UUID
-from wizipet_api.models.list_response_antiparasitaires_antiparasitaire_dto import ListResponseAntiparasitairesAntiparasitaireDto
-from wizipet_api.models.list_response_santes_medicamentation_item_dto import ListResponseSantesMedicamentationItemDto
 from wizipet_api.models.santes_set_medicamentation_dto import SantesSetMedicamentationDto
+from wizipet_api.models.wp_list_response_antiparasitaires_antiparasitaire_dto import WpListResponseAntiparasitairesAntiparasitaireDto
+from wizipet_api.models.wp_list_response_santes_medicamentation_item_dto import WpListResponseSantesMedicamentationItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_create_reply_dto import WpResponseCreateReplyDto
 
@@ -57,7 +57,7 @@ class FrontAntiparasitaireApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseAntiparasitairesAntiparasitaireDto:
+    ) -> WpListResponseAntiparasitairesAntiparasitaireDto:
         """api_v1_front_antiparasitaires_get
 
         
@@ -92,7 +92,7 @@ class FrontAntiparasitaireApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseAntiparasitairesAntiparasitaireDto",
+            '200': "WpListResponseAntiparasitairesAntiparasitaireDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -120,7 +120,7 @@ class FrontAntiparasitaireApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseAntiparasitairesAntiparasitaireDto]:
+    ) -> ApiResponse[WpListResponseAntiparasitairesAntiparasitaireDto]:
         """api_v1_front_antiparasitaires_get
 
         
@@ -155,7 +155,7 @@ class FrontAntiparasitaireApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseAntiparasitairesAntiparasitaireDto",
+            '200': "WpListResponseAntiparasitairesAntiparasitaireDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -218,7 +218,7 @@ class FrontAntiparasitaireApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseAntiparasitairesAntiparasitaireDto",
+            '200': "WpListResponseAntiparasitairesAntiparasitaireDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -306,7 +306,7 @@ class FrontAntiparasitaireApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesMedicamentationItemDto:
+    ) -> WpListResponseSantesMedicamentationItemDto:
         """api_v1_front_profile_pet_id_santes_antiparasitaires_medicamentations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -344,7 +344,7 @@ class FrontAntiparasitaireApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesMedicamentationItemDto",
+            '200': "WpListResponseSantesMedicamentationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -375,7 +375,7 @@ class FrontAntiparasitaireApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesMedicamentationItemDto]:
+    ) -> ApiResponse[WpListResponseSantesMedicamentationItemDto]:
         """api_v1_front_profile_pet_id_santes_antiparasitaires_medicamentations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -413,7 +413,7 @@ class FrontAntiparasitaireApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesMedicamentationItemDto",
+            '200': "WpListResponseSantesMedicamentationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -482,7 +482,7 @@ class FrontAntiparasitaireApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesMedicamentationItemDto",
+            '200': "WpListResponseSantesMedicamentationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }

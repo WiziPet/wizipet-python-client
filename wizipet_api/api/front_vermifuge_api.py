@@ -18,9 +18,9 @@ from typing_extensions import Annotated
 
 from typing import Optional
 from uuid import UUID
-from wizipet_api.models.list_response_santes_medicamentation_item_dto import ListResponseSantesMedicamentationItemDto
-from wizipet_api.models.list_response_vermifuges_vermifuge_dto import ListResponseVermifugesVermifugeDto
 from wizipet_api.models.santes_set_medicamentation_dto import SantesSetMedicamentationDto
+from wizipet_api.models.wp_list_response_santes_medicamentation_item_dto import WpListResponseSantesMedicamentationItemDto
+from wizipet_api.models.wp_list_response_vermifuges_vermifuge_dto import WpListResponseVermifugesVermifugeDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_create_reply_dto import WpResponseCreateReplyDto
 
@@ -58,7 +58,7 @@ class FrontVermifugeApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesMedicamentationItemDto:
+    ) -> WpListResponseSantesMedicamentationItemDto:
         """api_v1_front_profile_pet_id_santes_vermifuges_medicamentations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -96,7 +96,7 @@ class FrontVermifugeApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesMedicamentationItemDto",
+            '200': "WpListResponseSantesMedicamentationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -127,7 +127,7 @@ class FrontVermifugeApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesMedicamentationItemDto]:
+    ) -> ApiResponse[WpListResponseSantesMedicamentationItemDto]:
         """api_v1_front_profile_pet_id_santes_vermifuges_medicamentations_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -165,7 +165,7 @@ class FrontVermifugeApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesMedicamentationItemDto",
+            '200': "WpListResponseSantesMedicamentationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -234,7 +234,7 @@ class FrontVermifugeApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesMedicamentationItemDto",
+            '200': "WpListResponseSantesMedicamentationItemDto",
             '401': "WpResponse",
             '403': "WpResponse",
         }
@@ -944,7 +944,7 @@ class FrontVermifugeApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseVermifugesVermifugeDto:
+    ) -> WpListResponseVermifugesVermifugeDto:
         """api_v1_front_vermifuges_get
 
         
@@ -979,7 +979,7 @@ class FrontVermifugeApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseVermifugesVermifugeDto",
+            '200': "WpListResponseVermifugesVermifugeDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -1007,7 +1007,7 @@ class FrontVermifugeApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseVermifugesVermifugeDto]:
+    ) -> ApiResponse[WpListResponseVermifugesVermifugeDto]:
         """api_v1_front_vermifuges_get
 
         
@@ -1042,7 +1042,7 @@ class FrontVermifugeApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseVermifugesVermifugeDto",
+            '200': "WpListResponseVermifugesVermifugeDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -1105,7 +1105,7 @@ class FrontVermifugeApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseVermifugesVermifugeDto",
+            '200': "WpListResponseVermifugesVermifugeDto",
         }
         response_data = await self.api_client.call_api(
             *_param,

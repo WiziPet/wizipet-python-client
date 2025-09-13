@@ -30,6 +30,7 @@ if __import__("typing").TYPE_CHECKING:
     from wizipet_api.api.front_vermifuge_api import FrontVermifugeApi
     from wizipet_api.api.front_version_api import FrontVersionApi
     from wizipet_api.api.front_warn_api import FrontWarnApi
+    from wizipet_api.api.media_api import MediaApi
     
 else:
     from lazy_imports import LazyModule, as_package, load
@@ -66,6 +67,7 @@ from wizipet_api.api.front_vaccin_api import FrontVaccinApi
 from wizipet_api.api.front_vermifuge_api import FrontVermifugeApi
 from wizipet_api.api.front_version_api import FrontVersionApi
 from wizipet_api.api.front_warn_api import FrontWarnApi
+from wizipet_api.api.media_api import MediaApi
 
 """,
             name=__name__,

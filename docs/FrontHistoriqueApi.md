@@ -10,7 +10,7 @@ Method | HTTP request | Description
 
 
 # **api_v1_front_profile_pet_id_historiques_activite_get**
-> ListResponseSantesHistoriqueDto api_v1_front_profile_pet_id_historiques_activite_get(pet_id)
+> WpListResponseSantesHistoriqueDto api_v1_front_profile_pet_id_historiques_activite_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -21,7 +21,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_historique_dto import ListResponseSantesHistoriqueDto
+from wizipet_api.models.wp_list_response_santes_historique_dto import WpListResponseSantesHistoriqueDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -66,7 +66,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseSantesHistoriqueDto**](ListResponseSantesHistoriqueDto.md)
+[**WpListResponseSantesHistoriqueDto**](WpListResponseSantesHistoriqueDto.md)
 
 ### Authorization
 
@@ -88,7 +88,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_historiques_alimentations_get**
-> ListResponseSantesHistoriqueDto api_v1_front_profile_pet_id_historiques_alimentations_get(pet_id)
+> WpListResponseSantesHistoriqueDto api_v1_front_profile_pet_id_historiques_alimentations_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -99,7 +99,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_historique_dto import ListResponseSantesHistoriqueDto
+from wizipet_api.models.wp_list_response_santes_historique_dto import WpListResponseSantesHistoriqueDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -144,7 +144,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseSantesHistoriqueDto**](ListResponseSantesHistoriqueDto.md)
+[**WpListResponseSantesHistoriqueDto**](WpListResponseSantesHistoriqueDto.md)
 
 ### Authorization
 
@@ -166,7 +166,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_historiques_poids_get**
-> ListResponseSantesHistoriqueDto api_v1_front_profile_pet_id_historiques_poids_get(pet_id)
+> WpListResponseSantesHistoriqueDto api_v1_front_profile_pet_id_historiques_poids_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -177,7 +177,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_historique_dto import ListResponseSantesHistoriqueDto
+from wizipet_api.models.wp_list_response_santes_historique_dto import WpListResponseSantesHistoriqueDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -222,7 +222,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseSantesHistoriqueDto**](ListResponseSantesHistoriqueDto.md)
+[**WpListResponseSantesHistoriqueDto**](WpListResponseSantesHistoriqueDto.md)
 
 ### Authorization
 

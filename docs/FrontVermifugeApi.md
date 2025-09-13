@@ -11,7 +11,7 @@ Method | HTTP request | Description
 
 
 # **api_v1_front_profile_pet_id_santes_vermifuges_medicamentations_get**
-> ListResponseSantesMedicamentationItemDto api_v1_front_profile_pet_id_santes_vermifuges_medicamentations_get(pet_id)
+> WpListResponseSantesMedicamentationItemDto api_v1_front_profile_pet_id_santes_vermifuges_medicamentations_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -22,7 +22,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_medicamentation_item_dto import ListResponseSantesMedicamentationItemDto
+from wizipet_api.models.wp_list_response_santes_medicamentation_item_dto import WpListResponseSantesMedicamentationItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -67,7 +67,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseSantesMedicamentationItemDto**](ListResponseSantesMedicamentationItemDto.md)
+[**WpListResponseSantesMedicamentationItemDto**](WpListResponseSantesMedicamentationItemDto.md)
 
 ### Authorization
 
@@ -258,7 +258,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_vermifuges_get**
-> ListResponseVermifugesVermifugeDto api_v1_front_vermifuges_get()
+> WpListResponseVermifugesVermifugeDto api_v1_front_vermifuges_get()
 
 
 
@@ -268,7 +268,7 @@ Name | Type | Description  | Notes
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_vermifuges_vermifuge_dto import ListResponseVermifugesVermifugeDto
+from wizipet_api.models.wp_list_response_vermifuges_vermifuge_dto import WpListResponseVermifugesVermifugeDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -309,7 +309,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ListResponseVermifugesVermifugeDto**](ListResponseVermifugesVermifugeDto.md)
+[**WpListResponseVermifugesVermifugeDto**](WpListResponseVermifugesVermifugeDto.md)
 
 ### Authorization
 

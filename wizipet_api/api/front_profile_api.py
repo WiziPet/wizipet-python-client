@@ -20,10 +20,10 @@ from pydantic import Field, StrictBool, StrictStr
 from typing import Optional
 from typing_extensions import Annotated
 from uuid import UUID
-from wizipet_api.models.list_response_profiles_pet_race_item_dto import ListResponseProfilesPetRaceItemDto
 from wizipet_api.models.profiles_other_profiles_list_dto import ProfilesOtherProfilesListDto
 from wizipet_api.models.profiles_patch_profile_dto import ProfilesPatchProfileDto
 from wizipet_api.models.profiles_pet_profile_request import ProfilesPetProfileRequest
+from wizipet_api.models.wp_list_response_profiles_pet_race_item_dto import WpListResponseProfilesPetRaceItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_create_reply_dto import WpResponseCreateReplyDto
 from wizipet_api.models.wp_response_profiles_my_profile_item_dto import WpResponseProfilesMyProfileItemDto
@@ -2625,7 +2625,7 @@ class FrontProfileApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseProfilesPetRaceItemDto:
+    ) -> WpListResponseProfilesPetRaceItemDto:
         """api_v1_front_races_get
 
         
@@ -2660,7 +2660,7 @@ class FrontProfileApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseProfilesPetRaceItemDto",
+            '200': "WpListResponseProfilesPetRaceItemDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -2688,7 +2688,7 @@ class FrontProfileApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseProfilesPetRaceItemDto]:
+    ) -> ApiResponse[WpListResponseProfilesPetRaceItemDto]:
         """api_v1_front_races_get
 
         
@@ -2723,7 +2723,7 @@ class FrontProfileApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseProfilesPetRaceItemDto",
+            '200': "WpListResponseProfilesPetRaceItemDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -2786,7 +2786,7 @@ class FrontProfileApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseProfilesPetRaceItemDto",
+            '200': "WpListResponseProfilesPetRaceItemDto",
         }
         response_data = await self.api_client.call_api(
             *_param,

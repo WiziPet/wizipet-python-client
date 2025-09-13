@@ -46,6 +46,7 @@ __all__ = [
     "FrontVermifugeApi",
     "FrontVersionApi",
     "FrontWarnApi",
+    "MediaApi",
     "ApiResponse",
     "ApiClient",
     "Configuration",
@@ -122,29 +123,7 @@ __all__ = [
     "GroupsGroupItemDto",
     "GroupsPetSummaryDto",
     "GroupsUpdateGroupDto",
-    "ListResponseAccueilAssistantPersonnelItemDto",
-    "ListResponseAntiparasitairesAntiparasitaireDto",
-    "ListResponseCartesPetFriendlyLocationItemDto",
-    "ListResponseCartesPetItemDto",
-    "ListResponseCartesUserItemDto",
-    "ListResponseContactsContactSummaryDto",
-    "ListResponseDiscussionsDiscussionItemDto",
-    "ListResponseGroupsGroupItemDto",
-    "ListResponsePenseBetesPenseBeteItemDto",
-    "ListResponsePlacesAnimauteLocalPageItemDto",
-    "ListResponsePlacesExpediaHotelItemDto",
-    "ListResponsePlacesPlaceItemDto",
-    "ListResponseProfilesPetRaceItemDto",
-    "ListResponseSantesCompanyAssuranceDto",
-    "ListResponseSantesHistoriqueDto",
-    "ListResponseSantesInfosMedicalesItemDto",
-    "ListResponseSantesMedicamentationItemDto",
-    "ListResponseSantesOperationItemDto",
-    "ListResponseSantesPathologieDto",
-    "ListResponseSantesSicknessItemDto",
-    "ListResponseVaccinsVaccinationItemDto",
-    "ListResponseVermifugesVermifugeDto",
-    "ListResponseWarnsWarnItemDto",
+    "MediaImageFileDto",
     "MediasImageAspectDto",
     "MediasVideoDto",
     "MediasVideoTranscodingStatusDto",
@@ -294,6 +273,29 @@ __all__ = [
     "WarnsWarnItemDto",
     "WarnsWarnItemGroupDto",
     "WarnsWarnTypeDto",
+    "WpListResponseAccueilAssistantPersonnelItemDto",
+    "WpListResponseAntiparasitairesAntiparasitaireDto",
+    "WpListResponseCartesPetFriendlyLocationItemDto",
+    "WpListResponseCartesPetItemDto",
+    "WpListResponseCartesUserItemDto",
+    "WpListResponseContactsContactSummaryDto",
+    "WpListResponseDiscussionsDiscussionItemDto",
+    "WpListResponseGroupsGroupItemDto",
+    "WpListResponsePenseBetesPenseBeteItemDto",
+    "WpListResponsePlacesAnimauteLocalPageItemDto",
+    "WpListResponsePlacesExpediaHotelItemDto",
+    "WpListResponsePlacesPlaceItemDto",
+    "WpListResponseProfilesPetRaceItemDto",
+    "WpListResponseSantesCompanyAssuranceDto",
+    "WpListResponseSantesHistoriqueDto",
+    "WpListResponseSantesInfosMedicalesItemDto",
+    "WpListResponseSantesMedicamentationItemDto",
+    "WpListResponseSantesOperationItemDto",
+    "WpListResponseSantesPathologieDto",
+    "WpListResponseSantesSicknessItemDto",
+    "WpListResponseVaccinsVaccinationItemDto",
+    "WpListResponseVermifugesVermifugeDto",
+    "WpListResponseWarnsWarnItemDto",
     "WpResponse",
     "WpResponseAuthMeDto",
     "WpResponseAuthTokensResponse",
@@ -306,6 +308,7 @@ __all__ = [
     "WpResponseCreateReplyDto",
     "WpResponseDiscussionsDiscussionDto",
     "WpResponseEncyclopediesFrontArticleDto",
+    "WpResponseMediaImageFileDto",
     "WpResponsePenseBetesPenseBeteDto",
     "WpResponseProfilesMyProfileItemDto",
     "WpResponseProfilesMyProfilesListDto",
@@ -362,6 +365,7 @@ if __import__("typing").TYPE_CHECKING:
     from wizipet_api.api.front_vermifuge_api import FrontVermifugeApi as FrontVermifugeApi
     from wizipet_api.api.front_version_api import FrontVersionApi as FrontVersionApi
     from wizipet_api.api.front_warn_api import FrontWarnApi as FrontWarnApi
+    from wizipet_api.api.media_api import MediaApi as MediaApi
     
     # import ApiClient
     from wizipet_api.api_response import ApiResponse as ApiResponse
@@ -442,29 +446,7 @@ if __import__("typing").TYPE_CHECKING:
     from wizipet_api.models.groups_group_item_dto import GroupsGroupItemDto as GroupsGroupItemDto
     from wizipet_api.models.groups_pet_summary_dto import GroupsPetSummaryDto as GroupsPetSummaryDto
     from wizipet_api.models.groups_update_group_dto import GroupsUpdateGroupDto as GroupsUpdateGroupDto
-    from wizipet_api.models.list_response_accueil_assistant_personnel_item_dto import ListResponseAccueilAssistantPersonnelItemDto as ListResponseAccueilAssistantPersonnelItemDto
-    from wizipet_api.models.list_response_antiparasitaires_antiparasitaire_dto import ListResponseAntiparasitairesAntiparasitaireDto as ListResponseAntiparasitairesAntiparasitaireDto
-    from wizipet_api.models.list_response_cartes_pet_friendly_location_item_dto import ListResponseCartesPetFriendlyLocationItemDto as ListResponseCartesPetFriendlyLocationItemDto
-    from wizipet_api.models.list_response_cartes_pet_item_dto import ListResponseCartesPetItemDto as ListResponseCartesPetItemDto
-    from wizipet_api.models.list_response_cartes_user_item_dto import ListResponseCartesUserItemDto as ListResponseCartesUserItemDto
-    from wizipet_api.models.list_response_contacts_contact_summary_dto import ListResponseContactsContactSummaryDto as ListResponseContactsContactSummaryDto
-    from wizipet_api.models.list_response_discussions_discussion_item_dto import ListResponseDiscussionsDiscussionItemDto as ListResponseDiscussionsDiscussionItemDto
-    from wizipet_api.models.list_response_groups_group_item_dto import ListResponseGroupsGroupItemDto as ListResponseGroupsGroupItemDto
-    from wizipet_api.models.list_response_pense_betes_pense_bete_item_dto import ListResponsePenseBetesPenseBeteItemDto as ListResponsePenseBetesPenseBeteItemDto
-    from wizipet_api.models.list_response_places_animaute_local_page_item_dto import ListResponsePlacesAnimauteLocalPageItemDto as ListResponsePlacesAnimauteLocalPageItemDto
-    from wizipet_api.models.list_response_places_expedia_hotel_item_dto import ListResponsePlacesExpediaHotelItemDto as ListResponsePlacesExpediaHotelItemDto
-    from wizipet_api.models.list_response_places_place_item_dto import ListResponsePlacesPlaceItemDto as ListResponsePlacesPlaceItemDto
-    from wizipet_api.models.list_response_profiles_pet_race_item_dto import ListResponseProfilesPetRaceItemDto as ListResponseProfilesPetRaceItemDto
-    from wizipet_api.models.list_response_santes_company_assurance_dto import ListResponseSantesCompanyAssuranceDto as ListResponseSantesCompanyAssuranceDto
-    from wizipet_api.models.list_response_santes_historique_dto import ListResponseSantesHistoriqueDto as ListResponseSantesHistoriqueDto
-    from wizipet_api.models.list_response_santes_infos_medicales_item_dto import ListResponseSantesInfosMedicalesItemDto as ListResponseSantesInfosMedicalesItemDto
-    from wizipet_api.models.list_response_santes_medicamentation_item_dto import ListResponseSantesMedicamentationItemDto as ListResponseSantesMedicamentationItemDto
-    from wizipet_api.models.list_response_santes_operation_item_dto import ListResponseSantesOperationItemDto as ListResponseSantesOperationItemDto
-    from wizipet_api.models.list_response_santes_pathologie_dto import ListResponseSantesPathologieDto as ListResponseSantesPathologieDto
-    from wizipet_api.models.list_response_santes_sickness_item_dto import ListResponseSantesSicknessItemDto as ListResponseSantesSicknessItemDto
-    from wizipet_api.models.list_response_vaccins_vaccination_item_dto import ListResponseVaccinsVaccinationItemDto as ListResponseVaccinsVaccinationItemDto
-    from wizipet_api.models.list_response_vermifuges_vermifuge_dto import ListResponseVermifugesVermifugeDto as ListResponseVermifugesVermifugeDto
-    from wizipet_api.models.list_response_warns_warn_item_dto import ListResponseWarnsWarnItemDto as ListResponseWarnsWarnItemDto
+    from wizipet_api.models.media_image_file_dto import MediaImageFileDto as MediaImageFileDto
     from wizipet_api.models.medias_image_aspect_dto import MediasImageAspectDto as MediasImageAspectDto
     from wizipet_api.models.medias_video_dto import MediasVideoDto as MediasVideoDto
     from wizipet_api.models.medias_video_transcoding_status_dto import MediasVideoTranscodingStatusDto as MediasVideoTranscodingStatusDto
@@ -614,6 +596,29 @@ if __import__("typing").TYPE_CHECKING:
     from wizipet_api.models.warns_warn_item_dto import WarnsWarnItemDto as WarnsWarnItemDto
     from wizipet_api.models.warns_warn_item_group_dto import WarnsWarnItemGroupDto as WarnsWarnItemGroupDto
     from wizipet_api.models.warns_warn_type_dto import WarnsWarnTypeDto as WarnsWarnTypeDto
+    from wizipet_api.models.wp_list_response_accueil_assistant_personnel_item_dto import WpListResponseAccueilAssistantPersonnelItemDto as WpListResponseAccueilAssistantPersonnelItemDto
+    from wizipet_api.models.wp_list_response_antiparasitaires_antiparasitaire_dto import WpListResponseAntiparasitairesAntiparasitaireDto as WpListResponseAntiparasitairesAntiparasitaireDto
+    from wizipet_api.models.wp_list_response_cartes_pet_friendly_location_item_dto import WpListResponseCartesPetFriendlyLocationItemDto as WpListResponseCartesPetFriendlyLocationItemDto
+    from wizipet_api.models.wp_list_response_cartes_pet_item_dto import WpListResponseCartesPetItemDto as WpListResponseCartesPetItemDto
+    from wizipet_api.models.wp_list_response_cartes_user_item_dto import WpListResponseCartesUserItemDto as WpListResponseCartesUserItemDto
+    from wizipet_api.models.wp_list_response_contacts_contact_summary_dto import WpListResponseContactsContactSummaryDto as WpListResponseContactsContactSummaryDto
+    from wizipet_api.models.wp_list_response_discussions_discussion_item_dto import WpListResponseDiscussionsDiscussionItemDto as WpListResponseDiscussionsDiscussionItemDto
+    from wizipet_api.models.wp_list_response_groups_group_item_dto import WpListResponseGroupsGroupItemDto as WpListResponseGroupsGroupItemDto
+    from wizipet_api.models.wp_list_response_pense_betes_pense_bete_item_dto import WpListResponsePenseBetesPenseBeteItemDto as WpListResponsePenseBetesPenseBeteItemDto
+    from wizipet_api.models.wp_list_response_places_animaute_local_page_item_dto import WpListResponsePlacesAnimauteLocalPageItemDto as WpListResponsePlacesAnimauteLocalPageItemDto
+    from wizipet_api.models.wp_list_response_places_expedia_hotel_item_dto import WpListResponsePlacesExpediaHotelItemDto as WpListResponsePlacesExpediaHotelItemDto
+    from wizipet_api.models.wp_list_response_places_place_item_dto import WpListResponsePlacesPlaceItemDto as WpListResponsePlacesPlaceItemDto
+    from wizipet_api.models.wp_list_response_profiles_pet_race_item_dto import WpListResponseProfilesPetRaceItemDto as WpListResponseProfilesPetRaceItemDto
+    from wizipet_api.models.wp_list_response_santes_company_assurance_dto import WpListResponseSantesCompanyAssuranceDto as WpListResponseSantesCompanyAssuranceDto
+    from wizipet_api.models.wp_list_response_santes_historique_dto import WpListResponseSantesHistoriqueDto as WpListResponseSantesHistoriqueDto
+    from wizipet_api.models.wp_list_response_santes_infos_medicales_item_dto import WpListResponseSantesInfosMedicalesItemDto as WpListResponseSantesInfosMedicalesItemDto
+    from wizipet_api.models.wp_list_response_santes_medicamentation_item_dto import WpListResponseSantesMedicamentationItemDto as WpListResponseSantesMedicamentationItemDto
+    from wizipet_api.models.wp_list_response_santes_operation_item_dto import WpListResponseSantesOperationItemDto as WpListResponseSantesOperationItemDto
+    from wizipet_api.models.wp_list_response_santes_pathologie_dto import WpListResponseSantesPathologieDto as WpListResponseSantesPathologieDto
+    from wizipet_api.models.wp_list_response_santes_sickness_item_dto import WpListResponseSantesSicknessItemDto as WpListResponseSantesSicknessItemDto
+    from wizipet_api.models.wp_list_response_vaccins_vaccination_item_dto import WpListResponseVaccinsVaccinationItemDto as WpListResponseVaccinsVaccinationItemDto
+    from wizipet_api.models.wp_list_response_vermifuges_vermifuge_dto import WpListResponseVermifugesVermifugeDto as WpListResponseVermifugesVermifugeDto
+    from wizipet_api.models.wp_list_response_warns_warn_item_dto import WpListResponseWarnsWarnItemDto as WpListResponseWarnsWarnItemDto
     from wizipet_api.models.wp_response import WpResponse as WpResponse
     from wizipet_api.models.wp_response_auth_me_dto import WpResponseAuthMeDto as WpResponseAuthMeDto
     from wizipet_api.models.wp_response_auth_tokens_response import WpResponseAuthTokensResponse as WpResponseAuthTokensResponse
@@ -626,6 +631,7 @@ if __import__("typing").TYPE_CHECKING:
     from wizipet_api.models.wp_response_create_reply_dto import WpResponseCreateReplyDto as WpResponseCreateReplyDto
     from wizipet_api.models.wp_response_discussions_discussion_dto import WpResponseDiscussionsDiscussionDto as WpResponseDiscussionsDiscussionDto
     from wizipet_api.models.wp_response_encyclopedies_front_article_dto import WpResponseEncyclopediesFrontArticleDto as WpResponseEncyclopediesFrontArticleDto
+    from wizipet_api.models.wp_response_media_image_file_dto import WpResponseMediaImageFileDto as WpResponseMediaImageFileDto
     from wizipet_api.models.wp_response_pense_betes_pense_bete_dto import WpResponsePenseBetesPenseBeteDto as WpResponsePenseBetesPenseBeteDto
     from wizipet_api.models.wp_response_profiles_my_profile_item_dto import WpResponseProfilesMyProfileItemDto as WpResponseProfilesMyProfileItemDto
     from wizipet_api.models.wp_response_profiles_my_profiles_list_dto import WpResponseProfilesMyProfilesListDto as WpResponseProfilesMyProfilesListDto
@@ -688,6 +694,7 @@ from wizipet_api.api.front_vaccin_api import FrontVaccinApi as FrontVaccinApi
 from wizipet_api.api.front_vermifuge_api import FrontVermifugeApi as FrontVermifugeApi
 from wizipet_api.api.front_version_api import FrontVersionApi as FrontVersionApi
 from wizipet_api.api.front_warn_api import FrontWarnApi as FrontWarnApi
+from wizipet_api.api.media_api import MediaApi as MediaApi
 
 # import ApiClient
 from wizipet_api.api_response import ApiResponse as ApiResponse
@@ -768,29 +775,7 @@ from wizipet_api.models.groups_group_dto import GroupsGroupDto as GroupsGroupDto
 from wizipet_api.models.groups_group_item_dto import GroupsGroupItemDto as GroupsGroupItemDto
 from wizipet_api.models.groups_pet_summary_dto import GroupsPetSummaryDto as GroupsPetSummaryDto
 from wizipet_api.models.groups_update_group_dto import GroupsUpdateGroupDto as GroupsUpdateGroupDto
-from wizipet_api.models.list_response_accueil_assistant_personnel_item_dto import ListResponseAccueilAssistantPersonnelItemDto as ListResponseAccueilAssistantPersonnelItemDto
-from wizipet_api.models.list_response_antiparasitaires_antiparasitaire_dto import ListResponseAntiparasitairesAntiparasitaireDto as ListResponseAntiparasitairesAntiparasitaireDto
-from wizipet_api.models.list_response_cartes_pet_friendly_location_item_dto import ListResponseCartesPetFriendlyLocationItemDto as ListResponseCartesPetFriendlyLocationItemDto
-from wizipet_api.models.list_response_cartes_pet_item_dto import ListResponseCartesPetItemDto as ListResponseCartesPetItemDto
-from wizipet_api.models.list_response_cartes_user_item_dto import ListResponseCartesUserItemDto as ListResponseCartesUserItemDto
-from wizipet_api.models.list_response_contacts_contact_summary_dto import ListResponseContactsContactSummaryDto as ListResponseContactsContactSummaryDto
-from wizipet_api.models.list_response_discussions_discussion_item_dto import ListResponseDiscussionsDiscussionItemDto as ListResponseDiscussionsDiscussionItemDto
-from wizipet_api.models.list_response_groups_group_item_dto import ListResponseGroupsGroupItemDto as ListResponseGroupsGroupItemDto
-from wizipet_api.models.list_response_pense_betes_pense_bete_item_dto import ListResponsePenseBetesPenseBeteItemDto as ListResponsePenseBetesPenseBeteItemDto
-from wizipet_api.models.list_response_places_animaute_local_page_item_dto import ListResponsePlacesAnimauteLocalPageItemDto as ListResponsePlacesAnimauteLocalPageItemDto
-from wizipet_api.models.list_response_places_expedia_hotel_item_dto import ListResponsePlacesExpediaHotelItemDto as ListResponsePlacesExpediaHotelItemDto
-from wizipet_api.models.list_response_places_place_item_dto import ListResponsePlacesPlaceItemDto as ListResponsePlacesPlaceItemDto
-from wizipet_api.models.list_response_profiles_pet_race_item_dto import ListResponseProfilesPetRaceItemDto as ListResponseProfilesPetRaceItemDto
-from wizipet_api.models.list_response_santes_company_assurance_dto import ListResponseSantesCompanyAssuranceDto as ListResponseSantesCompanyAssuranceDto
-from wizipet_api.models.list_response_santes_historique_dto import ListResponseSantesHistoriqueDto as ListResponseSantesHistoriqueDto
-from wizipet_api.models.list_response_santes_infos_medicales_item_dto import ListResponseSantesInfosMedicalesItemDto as ListResponseSantesInfosMedicalesItemDto
-from wizipet_api.models.list_response_santes_medicamentation_item_dto import ListResponseSantesMedicamentationItemDto as ListResponseSantesMedicamentationItemDto
-from wizipet_api.models.list_response_santes_operation_item_dto import ListResponseSantesOperationItemDto as ListResponseSantesOperationItemDto
-from wizipet_api.models.list_response_santes_pathologie_dto import ListResponseSantesPathologieDto as ListResponseSantesPathologieDto
-from wizipet_api.models.list_response_santes_sickness_item_dto import ListResponseSantesSicknessItemDto as ListResponseSantesSicknessItemDto
-from wizipet_api.models.list_response_vaccins_vaccination_item_dto import ListResponseVaccinsVaccinationItemDto as ListResponseVaccinsVaccinationItemDto
-from wizipet_api.models.list_response_vermifuges_vermifuge_dto import ListResponseVermifugesVermifugeDto as ListResponseVermifugesVermifugeDto
-from wizipet_api.models.list_response_warns_warn_item_dto import ListResponseWarnsWarnItemDto as ListResponseWarnsWarnItemDto
+from wizipet_api.models.media_image_file_dto import MediaImageFileDto as MediaImageFileDto
 from wizipet_api.models.medias_image_aspect_dto import MediasImageAspectDto as MediasImageAspectDto
 from wizipet_api.models.medias_video_dto import MediasVideoDto as MediasVideoDto
 from wizipet_api.models.medias_video_transcoding_status_dto import MediasVideoTranscodingStatusDto as MediasVideoTranscodingStatusDto
@@ -940,6 +925,29 @@ from wizipet_api.models.versions_version_dto import VersionsVersionDto as Versio
 from wizipet_api.models.warns_warn_item_dto import WarnsWarnItemDto as WarnsWarnItemDto
 from wizipet_api.models.warns_warn_item_group_dto import WarnsWarnItemGroupDto as WarnsWarnItemGroupDto
 from wizipet_api.models.warns_warn_type_dto import WarnsWarnTypeDto as WarnsWarnTypeDto
+from wizipet_api.models.wp_list_response_accueil_assistant_personnel_item_dto import WpListResponseAccueilAssistantPersonnelItemDto as WpListResponseAccueilAssistantPersonnelItemDto
+from wizipet_api.models.wp_list_response_antiparasitaires_antiparasitaire_dto import WpListResponseAntiparasitairesAntiparasitaireDto as WpListResponseAntiparasitairesAntiparasitaireDto
+from wizipet_api.models.wp_list_response_cartes_pet_friendly_location_item_dto import WpListResponseCartesPetFriendlyLocationItemDto as WpListResponseCartesPetFriendlyLocationItemDto
+from wizipet_api.models.wp_list_response_cartes_pet_item_dto import WpListResponseCartesPetItemDto as WpListResponseCartesPetItemDto
+from wizipet_api.models.wp_list_response_cartes_user_item_dto import WpListResponseCartesUserItemDto as WpListResponseCartesUserItemDto
+from wizipet_api.models.wp_list_response_contacts_contact_summary_dto import WpListResponseContactsContactSummaryDto as WpListResponseContactsContactSummaryDto
+from wizipet_api.models.wp_list_response_discussions_discussion_item_dto import WpListResponseDiscussionsDiscussionItemDto as WpListResponseDiscussionsDiscussionItemDto
+from wizipet_api.models.wp_list_response_groups_group_item_dto import WpListResponseGroupsGroupItemDto as WpListResponseGroupsGroupItemDto
+from wizipet_api.models.wp_list_response_pense_betes_pense_bete_item_dto import WpListResponsePenseBetesPenseBeteItemDto as WpListResponsePenseBetesPenseBeteItemDto
+from wizipet_api.models.wp_list_response_places_animaute_local_page_item_dto import WpListResponsePlacesAnimauteLocalPageItemDto as WpListResponsePlacesAnimauteLocalPageItemDto
+from wizipet_api.models.wp_list_response_places_expedia_hotel_item_dto import WpListResponsePlacesExpediaHotelItemDto as WpListResponsePlacesExpediaHotelItemDto
+from wizipet_api.models.wp_list_response_places_place_item_dto import WpListResponsePlacesPlaceItemDto as WpListResponsePlacesPlaceItemDto
+from wizipet_api.models.wp_list_response_profiles_pet_race_item_dto import WpListResponseProfilesPetRaceItemDto as WpListResponseProfilesPetRaceItemDto
+from wizipet_api.models.wp_list_response_santes_company_assurance_dto import WpListResponseSantesCompanyAssuranceDto as WpListResponseSantesCompanyAssuranceDto
+from wizipet_api.models.wp_list_response_santes_historique_dto import WpListResponseSantesHistoriqueDto as WpListResponseSantesHistoriqueDto
+from wizipet_api.models.wp_list_response_santes_infos_medicales_item_dto import WpListResponseSantesInfosMedicalesItemDto as WpListResponseSantesInfosMedicalesItemDto
+from wizipet_api.models.wp_list_response_santes_medicamentation_item_dto import WpListResponseSantesMedicamentationItemDto as WpListResponseSantesMedicamentationItemDto
+from wizipet_api.models.wp_list_response_santes_operation_item_dto import WpListResponseSantesOperationItemDto as WpListResponseSantesOperationItemDto
+from wizipet_api.models.wp_list_response_santes_pathologie_dto import WpListResponseSantesPathologieDto as WpListResponseSantesPathologieDto
+from wizipet_api.models.wp_list_response_santes_sickness_item_dto import WpListResponseSantesSicknessItemDto as WpListResponseSantesSicknessItemDto
+from wizipet_api.models.wp_list_response_vaccins_vaccination_item_dto import WpListResponseVaccinsVaccinationItemDto as WpListResponseVaccinsVaccinationItemDto
+from wizipet_api.models.wp_list_response_vermifuges_vermifuge_dto import WpListResponseVermifugesVermifugeDto as WpListResponseVermifugesVermifugeDto
+from wizipet_api.models.wp_list_response_warns_warn_item_dto import WpListResponseWarnsWarnItemDto as WpListResponseWarnsWarnItemDto
 from wizipet_api.models.wp_response import WpResponse as WpResponse
 from wizipet_api.models.wp_response_auth_me_dto import WpResponseAuthMeDto as WpResponseAuthMeDto
 from wizipet_api.models.wp_response_auth_tokens_response import WpResponseAuthTokensResponse as WpResponseAuthTokensResponse
@@ -952,6 +960,7 @@ from wizipet_api.models.wp_response_common_list_pet_likes_dto import WpResponseC
 from wizipet_api.models.wp_response_create_reply_dto import WpResponseCreateReplyDto as WpResponseCreateReplyDto
 from wizipet_api.models.wp_response_discussions_discussion_dto import WpResponseDiscussionsDiscussionDto as WpResponseDiscussionsDiscussionDto
 from wizipet_api.models.wp_response_encyclopedies_front_article_dto import WpResponseEncyclopediesFrontArticleDto as WpResponseEncyclopediesFrontArticleDto
+from wizipet_api.models.wp_response_media_image_file_dto import WpResponseMediaImageFileDto as WpResponseMediaImageFileDto
 from wizipet_api.models.wp_response_pense_betes_pense_bete_dto import WpResponsePenseBetesPenseBeteDto as WpResponsePenseBetesPenseBeteDto
 from wizipet_api.models.wp_response_profiles_my_profile_item_dto import WpResponseProfilesMyProfileItemDto as WpResponseProfilesMyProfileItemDto
 from wizipet_api.models.wp_response_profiles_my_profiles_list_dto import WpResponseProfilesMyProfilesListDto as WpResponseProfilesMyProfilesListDto

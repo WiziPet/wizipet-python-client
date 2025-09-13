@@ -734,7 +734,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_races_get**
-> ListResponseProfilesPetRaceItemDto api_v1_front_races_get()
+> WpListResponseProfilesPetRaceItemDto api_v1_front_races_get()
 
 
 
@@ -744,7 +744,7 @@ Name | Type | Description  | Notes
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_profiles_pet_race_item_dto import ListResponseProfilesPetRaceItemDto
+from wizipet_api.models.wp_list_response_profiles_pet_race_item_dto import WpListResponseProfilesPetRaceItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -785,7 +785,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ListResponseProfilesPetRaceItemDto**](ListResponseProfilesPetRaceItemDto.md)
+[**WpListResponseProfilesPetRaceItemDto**](WpListResponseProfilesPetRaceItemDto.md)
 
 ### Authorization
 

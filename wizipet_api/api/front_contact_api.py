@@ -19,8 +19,8 @@ from typing_extensions import Annotated
 from pydantic import StrictStr
 from typing import Optional
 from uuid import UUID
-from wizipet_api.models.list_response_contacts_contact_summary_dto import ListResponseContactsContactSummaryDto
 from wizipet_api.models.resumable_list_response_publications_publication_item_dto import ResumableListResponsePublicationsPublicationItemDto
+from wizipet_api.models.wp_list_response_contacts_contact_summary_dto import WpListResponseContactsContactSummaryDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_system_int32 import WpResponseSystemInt32
 
@@ -607,7 +607,7 @@ class FrontContactApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseContactsContactSummaryDto:
+    ) -> WpListResponseContactsContactSummaryDto:
         """api_v1_front_profile_pet_id_contact_summary_get
 
         Error codes :    - PROFILE_NOT_FOUND:    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -645,7 +645,7 @@ class FrontContactApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseContactsContactSummaryDto",
+            '200': "WpListResponseContactsContactSummaryDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(
@@ -675,7 +675,7 @@ class FrontContactApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseContactsContactSummaryDto]:
+    ) -> ApiResponse[WpListResponseContactsContactSummaryDto]:
         """api_v1_front_profile_pet_id_contact_summary_get
 
         Error codes :    - PROFILE_NOT_FOUND:    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -713,7 +713,7 @@ class FrontContactApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseContactsContactSummaryDto",
+            '200': "WpListResponseContactsContactSummaryDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(
@@ -781,7 +781,7 @@ class FrontContactApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseContactsContactSummaryDto",
+            '200': "WpListResponseContactsContactSummaryDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(

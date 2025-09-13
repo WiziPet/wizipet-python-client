@@ -17,7 +17,7 @@ from typing import Any, Dict, List, Optional, Tuple, Union
 from typing_extensions import Annotated
 
 from uuid import UUID
-from wizipet_api.models.list_response_warns_warn_item_dto import ListResponseWarnsWarnItemDto
+from wizipet_api.models.wp_list_response_warns_warn_item_dto import WpListResponseWarnsWarnItemDto
 from wizipet_api.models.wp_response import WpResponse
 
 from wizipet_api.api_client import ApiClient, RequestSerialized
@@ -54,7 +54,7 @@ class FrontWarnApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseWarnsWarnItemDto:
+    ) -> WpListResponseWarnsWarnItemDto:
         """api_v1_front_profile_pet_id_warns_get
 
         
@@ -92,7 +92,7 @@ class FrontWarnApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseWarnsWarnItemDto",
+            '200': "WpListResponseWarnsWarnItemDto",
             '400': "WpResponse",
             '401': "WpResponse",
         }
@@ -123,7 +123,7 @@ class FrontWarnApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseWarnsWarnItemDto]:
+    ) -> ApiResponse[WpListResponseWarnsWarnItemDto]:
         """api_v1_front_profile_pet_id_warns_get
 
         
@@ -161,7 +161,7 @@ class FrontWarnApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseWarnsWarnItemDto",
+            '200': "WpListResponseWarnsWarnItemDto",
             '400': "WpResponse",
             '401': "WpResponse",
         }
@@ -230,7 +230,7 @@ class FrontWarnApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseWarnsWarnItemDto",
+            '200': "WpListResponseWarnsWarnItemDto",
             '400': "WpResponse",
             '401': "WpResponse",
         }

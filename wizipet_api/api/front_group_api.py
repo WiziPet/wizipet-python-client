@@ -21,7 +21,7 @@ from uuid import UUID
 from wizipet_api.models.groups_create_group_dto import GroupsCreateGroupDto
 from wizipet_api.models.groups_group_dto import GroupsGroupDto
 from wizipet_api.models.groups_update_group_dto import GroupsUpdateGroupDto
-from wizipet_api.models.list_response_groups_group_item_dto import ListResponseGroupsGroupItemDto
+from wizipet_api.models.wp_list_response_groups_group_item_dto import WpListResponseGroupsGroupItemDto
 from wizipet_api.models.wp_response import WpResponse
 
 from wizipet_api.api_client import ApiClient, RequestSerialized
@@ -358,7 +358,7 @@ class FrontGroupApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseGroupsGroupItemDto:
+    ) -> WpListResponseGroupsGroupItemDto:
         """api_v1_front_profile_pet_id_groups_get
 
         
@@ -396,7 +396,7 @@ class FrontGroupApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseGroupsGroupItemDto",
+            '200': "WpListResponseGroupsGroupItemDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(
@@ -426,7 +426,7 @@ class FrontGroupApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseGroupsGroupItemDto]:
+    ) -> ApiResponse[WpListResponseGroupsGroupItemDto]:
         """api_v1_front_profile_pet_id_groups_get
 
         
@@ -464,7 +464,7 @@ class FrontGroupApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseGroupsGroupItemDto",
+            '200': "WpListResponseGroupsGroupItemDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(
@@ -532,7 +532,7 @@ class FrontGroupApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseGroupsGroupItemDto",
+            '200': "WpListResponseGroupsGroupItemDto",
             '401': "WpResponse",
         }
         response_data = await self.api_client.call_api(

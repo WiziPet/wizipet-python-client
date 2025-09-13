@@ -95,7 +95,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_groups_get**
-> ListResponseGroupsGroupItemDto api_v1_front_profile_pet_id_groups_get(pet_id)
+> WpListResponseGroupsGroupItemDto api_v1_front_profile_pet_id_groups_get(pet_id)
 
 
 
@@ -105,7 +105,7 @@ Name | Type | Description  | Notes
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_groups_group_item_dto import ListResponseGroupsGroupItemDto
+from wizipet_api.models.wp_list_response_groups_group_item_dto import WpListResponseGroupsGroupItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -150,7 +150,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseGroupsGroupItemDto**](ListResponseGroupsGroupItemDto.md)
+[**WpListResponseGroupsGroupItemDto**](WpListResponseGroupsGroupItemDto.md)
 
 ### Authorization
 

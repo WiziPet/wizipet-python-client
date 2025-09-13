@@ -24,16 +24,16 @@ from wizipet_api.models.cartes_list_profiles_param_dto import CartesListProfiles
 from wizipet_api.models.cartes_list_users_param_dto import CartesListUsersParamDto
 from wizipet_api.models.cartes_post_pet_friendly_location_param_dto import CartesPostPetFriendlyLocationParamDto
 from wizipet_api.models.cartes_put_position_dto import CartesPutPositionDto
-from wizipet_api.models.list_response_cartes_pet_friendly_location_item_dto import ListResponseCartesPetFriendlyLocationItemDto
-from wizipet_api.models.list_response_cartes_pet_item_dto import ListResponseCartesPetItemDto
-from wizipet_api.models.list_response_cartes_user_item_dto import ListResponseCartesUserItemDto
-from wizipet_api.models.list_response_places_animaute_local_page_item_dto import ListResponsePlacesAnimauteLocalPageItemDto
-from wizipet_api.models.list_response_places_expedia_hotel_item_dto import ListResponsePlacesExpediaHotelItemDto
-from wizipet_api.models.list_response_places_place_item_dto import ListResponsePlacesPlaceItemDto
 from wizipet_api.models.medias_image_aspect_dto import MediasImageAspectDto
 from wizipet_api.models.places_list_expedia_hotel_search_dto import PlacesListExpediaHotelSearchDto
 from wizipet_api.models.places_list_places_dto import PlacesListPlacesDto
 from wizipet_api.models.places_list_places_from_bounds_dto import PlacesListPlacesFromBoundsDto
+from wizipet_api.models.wp_list_response_cartes_pet_friendly_location_item_dto import WpListResponseCartesPetFriendlyLocationItemDto
+from wizipet_api.models.wp_list_response_cartes_pet_item_dto import WpListResponseCartesPetItemDto
+from wizipet_api.models.wp_list_response_cartes_user_item_dto import WpListResponseCartesUserItemDto
+from wizipet_api.models.wp_list_response_places_animaute_local_page_item_dto import WpListResponsePlacesAnimauteLocalPageItemDto
+from wizipet_api.models.wp_list_response_places_expedia_hotel_item_dto import WpListResponsePlacesExpediaHotelItemDto
+from wizipet_api.models.wp_list_response_places_place_item_dto import WpListResponsePlacesPlaceItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_cartes_geocode_results_dto import WpResponseCartesGeocodeResultsDto
 from wizipet_api.models.wp_response_cartes_pet_friendly_place_details_dto import WpResponseCartesPetFriendlyPlaceDetailsDto
@@ -76,7 +76,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponsePlacesAnimauteLocalPageItemDto:
+    ) -> WpListResponsePlacesAnimauteLocalPageItemDto:
         """api_v1_front_cartes_animaute_local_pages_post
 
         
@@ -114,7 +114,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesAnimauteLocalPageItemDto",
+            '200': "WpListResponsePlacesAnimauteLocalPageItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -145,7 +145,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponsePlacesAnimauteLocalPageItemDto]:
+    ) -> ApiResponse[WpListResponsePlacesAnimauteLocalPageItemDto]:
         """api_v1_front_cartes_animaute_local_pages_post
 
         
@@ -183,7 +183,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesAnimauteLocalPageItemDto",
+            '200': "WpListResponsePlacesAnimauteLocalPageItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -252,7 +252,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesAnimauteLocalPageItemDto",
+            '200': "WpListResponsePlacesAnimauteLocalPageItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -361,7 +361,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponsePlacesExpediaHotelItemDto:
+    ) -> WpListResponsePlacesExpediaHotelItemDto:
         """api_v1_front_cartes_expedia_hotels_post
 
         Error codes :    - EXPEDIA_REQUEST_ERROR:    - EXPEDIA_INVALID_DATE_RANGE: 
@@ -399,7 +399,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesExpediaHotelItemDto",
+            '200': "WpListResponsePlacesExpediaHotelItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -430,7 +430,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponsePlacesExpediaHotelItemDto]:
+    ) -> ApiResponse[WpListResponsePlacesExpediaHotelItemDto]:
         """api_v1_front_cartes_expedia_hotels_post
 
         Error codes :    - EXPEDIA_REQUEST_ERROR:    - EXPEDIA_INVALID_DATE_RANGE: 
@@ -468,7 +468,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesExpediaHotelItemDto",
+            '200': "WpListResponsePlacesExpediaHotelItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -537,7 +537,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesExpediaHotelItemDto",
+            '200': "WpListResponsePlacesExpediaHotelItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -917,7 +917,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseCartesPetItemDto:
+    ) -> WpListResponseCartesPetItemDto:
         """Obtient les profils des animaux perdus dans une zone géographique donnée.
 
         
@@ -955,7 +955,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesPetItemDto",
+            '200': "WpListResponseCartesPetItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -986,7 +986,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseCartesPetItemDto]:
+    ) -> ApiResponse[WpListResponseCartesPetItemDto]:
         """Obtient les profils des animaux perdus dans une zone géographique donnée.
 
         
@@ -1024,7 +1024,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesPetItemDto",
+            '200': "WpListResponseCartesPetItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -1093,7 +1093,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesPetItemDto",
+            '200': "WpListResponseCartesPetItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -1471,7 +1471,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseCartesPetFriendlyLocationItemDto:
+    ) -> WpListResponseCartesPetFriendlyLocationItemDto:
         """api_v1_front_cartes_places_pet_friendly_post
 
         
@@ -1509,7 +1509,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesPetFriendlyLocationItemDto",
+            '200': "WpListResponseCartesPetFriendlyLocationItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -1540,7 +1540,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseCartesPetFriendlyLocationItemDto]:
+    ) -> ApiResponse[WpListResponseCartesPetFriendlyLocationItemDto]:
         """api_v1_front_cartes_places_pet_friendly_post
 
         
@@ -1578,7 +1578,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesPetFriendlyLocationItemDto",
+            '200': "WpListResponseCartesPetFriendlyLocationItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -1647,7 +1647,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesPetFriendlyLocationItemDto",
+            '200': "WpListResponseCartesPetFriendlyLocationItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -2025,7 +2025,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponsePlacesPlaceItemDto:
+    ) -> WpListResponsePlacesPlaceItemDto:
         """api_v1_front_cartes_places_post
 
         
@@ -2063,7 +2063,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesPlaceItemDto",
+            '200': "WpListResponsePlacesPlaceItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -2094,7 +2094,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponsePlacesPlaceItemDto]:
+    ) -> ApiResponse[WpListResponsePlacesPlaceItemDto]:
         """api_v1_front_cartes_places_post
 
         
@@ -2132,7 +2132,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesPlaceItemDto",
+            '200': "WpListResponsePlacesPlaceItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -2201,7 +2201,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponsePlacesPlaceItemDto",
+            '200': "WpListResponsePlacesPlaceItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -3459,7 +3459,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseCartesUserItemDto:
+    ) -> WpListResponseCartesUserItemDto:
         """Obtient les utilisateurs partageant leur position et leurs profils (non perdus), exclus l'utilisateur couramment identifié.
 
         Verbe POST pour être compatible avec RestSharp
@@ -3497,7 +3497,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesUserItemDto",
+            '200': "WpListResponseCartesUserItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -3528,7 +3528,7 @@ class FrontCarteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseCartesUserItemDto]:
+    ) -> ApiResponse[WpListResponseCartesUserItemDto]:
         """Obtient les utilisateurs partageant leur position et leurs profils (non perdus), exclus l'utilisateur couramment identifié.
 
         Verbe POST pour être compatible avec RestSharp
@@ -3566,7 +3566,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesUserItemDto",
+            '200': "WpListResponseCartesUserItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }
@@ -3635,7 +3635,7 @@ class FrontCarteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseCartesUserItemDto",
+            '200': "WpListResponseCartesUserItemDto",
             '401': "WpResponse",
             '404': "WpResponse",
         }

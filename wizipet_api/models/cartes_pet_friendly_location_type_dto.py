@@ -36,6 +36,7 @@ class CartesPetFriendlyLocationTypeDto(str, Enum):
     CANIPARC = 'Caniparc'
     VILLAGEVACANCES = 'VillageVacances'
     CAFE = 'Cafe'
+    CENTREANTIPOISON = 'CentreAntiPoison'
 
     @classmethod
     def from_json(cls, json_str: str) -> Self:

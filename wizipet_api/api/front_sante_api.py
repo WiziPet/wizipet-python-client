@@ -19,11 +19,6 @@ from typing_extensions import Annotated
 from pydantic import StrictStr
 from typing import List, Optional
 from uuid import UUID
-from wizipet_api.models.list_response_santes_company_assurance_dto import ListResponseSantesCompanyAssuranceDto
-from wizipet_api.models.list_response_santes_infos_medicales_item_dto import ListResponseSantesInfosMedicalesItemDto
-from wizipet_api.models.list_response_santes_operation_item_dto import ListResponseSantesOperationItemDto
-from wizipet_api.models.list_response_santes_pathologie_dto import ListResponseSantesPathologieDto
-from wizipet_api.models.list_response_santes_sickness_item_dto import ListResponseSantesSicknessItemDto
 from wizipet_api.models.santes_clef_info_dto import SantesClefInfoDto
 from wizipet_api.models.santes_set_assurance_dto import SantesSetAssuranceDto
 from wizipet_api.models.santes_set_identifiant_dto import SantesSetIdentifiantDto
@@ -33,6 +28,11 @@ from wizipet_api.models.santes_set_physio_dto import SantesSetPhysioDto
 from wizipet_api.models.santes_set_sickness_dto import SantesSetSicknessDto
 from wizipet_api.models.santes_set_sterilisation_dto import SantesSetSterilisationDto
 from wizipet_api.models.santes_set_veterinaire_dto import SantesSetVeterinaireDto
+from wizipet_api.models.wp_list_response_santes_company_assurance_dto import WpListResponseSantesCompanyAssuranceDto
+from wizipet_api.models.wp_list_response_santes_infos_medicales_item_dto import WpListResponseSantesInfosMedicalesItemDto
+from wizipet_api.models.wp_list_response_santes_operation_item_dto import WpListResponseSantesOperationItemDto
+from wizipet_api.models.wp_list_response_santes_pathologie_dto import WpListResponseSantesPathologieDto
+from wizipet_api.models.wp_list_response_santes_sickness_item_dto import WpListResponseSantesSicknessItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_create_reply_dto import WpResponseCreateReplyDto
 from wizipet_api.models.wp_response_santes_assurance_dto import WpResponseSantesAssuranceDto
@@ -81,7 +81,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesCompanyAssuranceDto:
+    ) -> WpListResponseSantesCompanyAssuranceDto:
         """api_v1_front_company_assurances_get
 
         
@@ -116,7 +116,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesCompanyAssuranceDto",
+            '200': "WpListResponseSantesCompanyAssuranceDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -144,7 +144,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesCompanyAssuranceDto]:
+    ) -> ApiResponse[WpListResponseSantesCompanyAssuranceDto]:
         """api_v1_front_company_assurances_get
 
         
@@ -179,7 +179,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesCompanyAssuranceDto",
+            '200': "WpListResponseSantesCompanyAssuranceDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -242,7 +242,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesCompanyAssuranceDto",
+            '200': "WpListResponseSantesCompanyAssuranceDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -329,7 +329,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesPathologieDto:
+    ) -> WpListResponseSantesPathologieDto:
         """api_v1_front_pathologies_get
 
         
@@ -364,7 +364,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesPathologieDto",
+            '200': "WpListResponseSantesPathologieDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -392,7 +392,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesPathologieDto]:
+    ) -> ApiResponse[WpListResponseSantesPathologieDto]:
         """api_v1_front_pathologies_get
 
         
@@ -427,7 +427,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesPathologieDto",
+            '200': "WpListResponseSantesPathologieDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -490,7 +490,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesPathologieDto",
+            '200': "WpListResponseSantesPathologieDto",
         }
         response_data = await self.api_client.call_api(
             *_param,
@@ -3128,7 +3128,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesInfosMedicalesItemDto:
+    ) -> WpListResponseSantesInfosMedicalesItemDto:
         """api_v1_front_profile_pet_id_santes_infosmedicales_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -3166,7 +3166,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesInfosMedicalesItemDto",
+            '200': "WpListResponseSantesInfosMedicalesItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -3197,7 +3197,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesInfosMedicalesItemDto]:
+    ) -> ApiResponse[WpListResponseSantesInfosMedicalesItemDto]:
         """api_v1_front_profile_pet_id_santes_infosmedicales_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -3235,7 +3235,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesInfosMedicalesItemDto",
+            '200': "WpListResponseSantesInfosMedicalesItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -3304,7 +3304,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesInfosMedicalesItemDto",
+            '200': "WpListResponseSantesInfosMedicalesItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -3397,7 +3397,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesOperationItemDto:
+    ) -> WpListResponseSantesOperationItemDto:
         """api_v1_front_profile_pet_id_santes_operation_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -3435,7 +3435,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesOperationItemDto",
+            '200': "WpListResponseSantesOperationItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -3466,7 +3466,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesOperationItemDto]:
+    ) -> ApiResponse[WpListResponseSantesOperationItemDto]:
         """api_v1_front_profile_pet_id_santes_operation_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -3504,7 +3504,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesOperationItemDto",
+            '200': "WpListResponseSantesOperationItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -3573,7 +3573,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesOperationItemDto",
+            '200': "WpListResponseSantesOperationItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -5397,7 +5397,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseSantesSicknessItemDto:
+    ) -> WpListResponseSantesSicknessItemDto:
         """api_v1_front_profile_pet_id_santes_sickness_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -5435,7 +5435,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesSicknessItemDto",
+            '200': "WpListResponseSantesSicknessItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -5466,7 +5466,7 @@ class FrontSanteApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseSantesSicknessItemDto]:
+    ) -> ApiResponse[WpListResponseSantesSicknessItemDto]:
         """api_v1_front_profile_pet_id_santes_sickness_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -5504,7 +5504,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesSicknessItemDto",
+            '200': "WpListResponseSantesSicknessItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -5573,7 +5573,7 @@ class FrontSanteApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseSantesSicknessItemDto",
+            '200': "WpListResponseSantesSicknessItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }

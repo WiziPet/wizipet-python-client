@@ -34,7 +34,7 @@ Method | HTTP request | Description
 
 
 # **api_v1_front_company_assurances_get**
-> ListResponseSantesCompanyAssuranceDto api_v1_front_company_assurances_get()
+> WpListResponseSantesCompanyAssuranceDto api_v1_front_company_assurances_get()
 
 
 
@@ -44,7 +44,7 @@ Method | HTTP request | Description
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_company_assurance_dto import ListResponseSantesCompanyAssuranceDto
+from wizipet_api.models.wp_list_response_santes_company_assurance_dto import WpListResponseSantesCompanyAssuranceDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -85,7 +85,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ListResponseSantesCompanyAssuranceDto**](ListResponseSantesCompanyAssuranceDto.md)
+[**WpListResponseSantesCompanyAssuranceDto**](WpListResponseSantesCompanyAssuranceDto.md)
 
 ### Authorization
 
@@ -105,7 +105,7 @@ This endpoint does not need any parameter.
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_pathologies_get**
-> ListResponseSantesPathologieDto api_v1_front_pathologies_get()
+> WpListResponseSantesPathologieDto api_v1_front_pathologies_get()
 
 
 
@@ -115,7 +115,7 @@ This endpoint does not need any parameter.
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_pathologie_dto import ListResponseSantesPathologieDto
+from wizipet_api.models.wp_list_response_santes_pathologie_dto import WpListResponseSantesPathologieDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -156,7 +156,7 @@ This endpoint does not need any parameter.
 
 ### Return type
 
-[**ListResponseSantesPathologieDto**](ListResponseSantesPathologieDto.md)
+[**WpListResponseSantesPathologieDto**](WpListResponseSantesPathologieDto.md)
 
 ### Authorization
 
@@ -895,7 +895,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_santes_infosmedicales_get**
-> ListResponseSantesInfosMedicalesItemDto api_v1_front_profile_pet_id_santes_infosmedicales_get(pet_id)
+> WpListResponseSantesInfosMedicalesItemDto api_v1_front_profile_pet_id_santes_infosmedicales_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -906,7 +906,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_infos_medicales_item_dto import ListResponseSantesInfosMedicalesItemDto
+from wizipet_api.models.wp_list_response_santes_infos_medicales_item_dto import WpListResponseSantesInfosMedicalesItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -951,7 +951,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseSantesInfosMedicalesItemDto**](ListResponseSantesInfosMedicalesItemDto.md)
+[**WpListResponseSantesInfosMedicalesItemDto**](WpListResponseSantesInfosMedicalesItemDto.md)
 
 ### Authorization
 
@@ -973,7 +973,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_santes_operation_get**
-> ListResponseSantesOperationItemDto api_v1_front_profile_pet_id_santes_operation_get(pet_id)
+> WpListResponseSantesOperationItemDto api_v1_front_profile_pet_id_santes_operation_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -984,7 +984,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_operation_item_dto import ListResponseSantesOperationItemDto
+from wizipet_api.models.wp_list_response_santes_operation_item_dto import WpListResponseSantesOperationItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -1029,7 +1029,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseSantesOperationItemDto**](ListResponseSantesOperationItemDto.md)
+[**WpListResponseSantesOperationItemDto**](WpListResponseSantesOperationItemDto.md)
 
 ### Authorization
 
@@ -1532,7 +1532,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_profile_pet_id_santes_sickness_get**
-> ListResponseSantesSicknessItemDto api_v1_front_profile_pet_id_santes_sickness_get(pet_id)
+> WpListResponseSantesSicknessItemDto api_v1_front_profile_pet_id_santes_sickness_get(pet_id)
 
 Error codes : 
   - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -1543,7 +1543,7 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_santes_sickness_item_dto import ListResponseSantesSicknessItemDto
+from wizipet_api.models.wp_list_response_santes_sickness_item_dto import WpListResponseSantesSicknessItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -1588,7 +1588,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseSantesSicknessItemDto**](ListResponseSantesSicknessItemDto.md)
+[**WpListResponseSantesSicknessItemDto**](WpListResponseSantesSicknessItemDto.md)
 
 ### Authorization
 

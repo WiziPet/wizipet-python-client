@@ -19,7 +19,7 @@ from typing_extensions import Annotated
 from pydantic import StrictStr
 from uuid import UUID
 from wizipet_api.models.accueil_assistant_personnel_type_dto import AccueilAssistantPersonnelTypeDto
-from wizipet_api.models.list_response_accueil_assistant_personnel_item_dto import ListResponseAccueilAssistantPersonnelItemDto
+from wizipet_api.models.wp_list_response_accueil_assistant_personnel_item_dto import WpListResponseAccueilAssistantPersonnelItemDto
 from wizipet_api.models.wp_response import WpResponse
 from wizipet_api.models.wp_response_system_int32 import WpResponseSystemInt32
 
@@ -57,7 +57,7 @@ class FrontAccueilApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ListResponseAccueilAssistantPersonnelItemDto:
+    ) -> WpListResponseAccueilAssistantPersonnelItemDto:
         """api_v1_front_profile_pet_id_accueil_assistant_personnel_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -95,7 +95,7 @@ class FrontAccueilApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseAccueilAssistantPersonnelItemDto",
+            '200': "WpListResponseAccueilAssistantPersonnelItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -126,7 +126,7 @@ class FrontAccueilApi:
         _content_type: Optional[StrictStr] = None,
         _headers: Optional[Dict[StrictStr, Any]] = None,
         _host_index: Annotated[StrictInt, Field(ge=0, le=0)] = 0,
-    ) -> ApiResponse[ListResponseAccueilAssistantPersonnelItemDto]:
+    ) -> ApiResponse[WpListResponseAccueilAssistantPersonnelItemDto]:
         """api_v1_front_profile_pet_id_accueil_assistant_personnel_get
 
         Error codes :    - PET_UNOWNED: You are trying to make an action as a profile you are not owning
@@ -164,7 +164,7 @@ class FrontAccueilApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseAccueilAssistantPersonnelItemDto",
+            '200': "WpListResponseAccueilAssistantPersonnelItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }
@@ -233,7 +233,7 @@ class FrontAccueilApi:
         )
 
         _response_types_map: Dict[str, Optional[str]] = {
-            '200': "ListResponseAccueilAssistantPersonnelItemDto",
+            '200': "WpListResponseAccueilAssistantPersonnelItemDto",
             '404': "WpResponse",
             '401': "WpResponse",
         }

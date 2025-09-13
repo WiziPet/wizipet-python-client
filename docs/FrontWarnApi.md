@@ -9,7 +9,7 @@ Method | HTTP request | Description
 
 
 # **api_v1_front_profile_pet_id_warns_get**
-> ListResponseWarnsWarnItemDto api_v1_front_profile_pet_id_warns_get(pet_id)
+> WpListResponseWarnsWarnItemDto api_v1_front_profile_pet_id_warns_get(pet_id)
 
 
 
@@ -19,7 +19,7 @@ Method | HTTP request | Description
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_warns_warn_item_dto import ListResponseWarnsWarnItemDto
+from wizipet_api.models.wp_list_response_warns_warn_item_dto import WpListResponseWarnsWarnItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -64,7 +64,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseWarnsWarnItemDto**](ListResponseWarnsWarnItemDto.md)
+[**WpListResponseWarnsWarnItemDto**](WpListResponseWarnsWarnItemDto.md)
 
 ### Authorization
 

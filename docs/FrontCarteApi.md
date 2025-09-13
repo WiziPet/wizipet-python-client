@@ -24,7 +24,7 @@ Method | HTTP request | Description
 
 
 # **api_v1_front_cartes_animaute_local_pages_post**
-> ListResponsePlacesAnimauteLocalPageItemDto api_v1_front_cartes_animaute_local_pages_post(places_list_places_from_bounds_dto=places_list_places_from_bounds_dto)
+> WpListResponsePlacesAnimauteLocalPageItemDto api_v1_front_cartes_animaute_local_pages_post(places_list_places_from_bounds_dto=places_list_places_from_bounds_dto)
 
 
 
@@ -34,8 +34,8 @@ Method | HTTP request | Description
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_places_animaute_local_page_item_dto import ListResponsePlacesAnimauteLocalPageItemDto
 from wizipet_api.models.places_list_places_from_bounds_dto import PlacesListPlacesFromBoundsDto
+from wizipet_api.models.wp_list_response_places_animaute_local_page_item_dto import WpListResponsePlacesAnimauteLocalPageItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -80,7 +80,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponsePlacesAnimauteLocalPageItemDto**](ListResponsePlacesAnimauteLocalPageItemDto.md)
+[**WpListResponsePlacesAnimauteLocalPageItemDto**](WpListResponsePlacesAnimauteLocalPageItemDto.md)
 
 ### Authorization
 
@@ -102,7 +102,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_cartes_expedia_hotels_post**
-> ListResponsePlacesExpediaHotelItemDto api_v1_front_cartes_expedia_hotels_post(places_list_expedia_hotel_search_dto=places_list_expedia_hotel_search_dto)
+> WpListResponsePlacesExpediaHotelItemDto api_v1_front_cartes_expedia_hotels_post(places_list_expedia_hotel_search_dto=places_list_expedia_hotel_search_dto)
 
 Error codes : 
   - EXPEDIA_REQUEST_ERROR: 
@@ -114,8 +114,8 @@ Error codes :
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_places_expedia_hotel_item_dto import ListResponsePlacesExpediaHotelItemDto
 from wizipet_api.models.places_list_expedia_hotel_search_dto import PlacesListExpediaHotelSearchDto
+from wizipet_api.models.wp_list_response_places_expedia_hotel_item_dto import WpListResponsePlacesExpediaHotelItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -160,7 +160,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponsePlacesExpediaHotelItemDto**](ListResponsePlacesExpediaHotelItemDto.md)
+[**WpListResponsePlacesExpediaHotelItemDto**](WpListResponsePlacesExpediaHotelItemDto.md)
 
 ### Authorization
 
@@ -263,7 +263,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_cartes_pets_perdus_post**
-> ListResponseCartesPetItemDto api_v1_front_cartes_pets_perdus_post(cartes_list_profiles_param_dto=cartes_list_profiles_param_dto)
+> WpListResponseCartesPetItemDto api_v1_front_cartes_pets_perdus_post(cartes_list_profiles_param_dto=cartes_list_profiles_param_dto)
 
 Obtient les profils des animaux perdus dans une zone géographique donnée.
 
@@ -276,7 +276,7 @@ Obtient les profils des animaux perdus dans une zone géographique donnée.
 ```python
 import wizipet_api
 from wizipet_api.models.cartes_list_profiles_param_dto import CartesListProfilesParamDto
-from wizipet_api.models.list_response_cartes_pet_item_dto import ListResponseCartesPetItemDto
+from wizipet_api.models.wp_list_response_cartes_pet_item_dto import WpListResponseCartesPetItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -322,7 +322,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseCartesPetItemDto**](ListResponseCartesPetItemDto.md)
+[**WpListResponseCartesPetItemDto**](WpListResponseCartesPetItemDto.md)
 
 ### Authorization
 
@@ -421,7 +421,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_cartes_places_pet_friendly_post**
-> ListResponseCartesPetFriendlyLocationItemDto api_v1_front_cartes_places_pet_friendly_post(places_list_places_from_bounds_dto=places_list_places_from_bounds_dto)
+> WpListResponseCartesPetFriendlyLocationItemDto api_v1_front_cartes_places_pet_friendly_post(places_list_places_from_bounds_dto=places_list_places_from_bounds_dto)
 
 
 
@@ -431,8 +431,8 @@ Name | Type | Description  | Notes
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_cartes_pet_friendly_location_item_dto import ListResponseCartesPetFriendlyLocationItemDto
 from wizipet_api.models.places_list_places_from_bounds_dto import PlacesListPlacesFromBoundsDto
+from wizipet_api.models.wp_list_response_cartes_pet_friendly_location_item_dto import WpListResponseCartesPetFriendlyLocationItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -477,7 +477,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseCartesPetFriendlyLocationItemDto**](ListResponseCartesPetFriendlyLocationItemDto.md)
+[**WpListResponseCartesPetFriendlyLocationItemDto**](WpListResponseCartesPetFriendlyLocationItemDto.md)
 
 ### Authorization
 
@@ -576,7 +576,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_cartes_places_post**
-> ListResponsePlacesPlaceItemDto api_v1_front_cartes_places_post(places_list_places_dto=places_list_places_dto)
+> WpListResponsePlacesPlaceItemDto api_v1_front_cartes_places_post(places_list_places_dto=places_list_places_dto)
 
 
 
@@ -586,8 +586,8 @@ Name | Type | Description  | Notes
 
 ```python
 import wizipet_api
-from wizipet_api.models.list_response_places_place_item_dto import ListResponsePlacesPlaceItemDto
 from wizipet_api.models.places_list_places_dto import PlacesListPlacesDto
+from wizipet_api.models.wp_list_response_places_place_item_dto import WpListResponsePlacesPlaceItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -632,7 +632,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponsePlacesPlaceItemDto**](ListResponsePlacesPlaceItemDto.md)
+[**WpListResponsePlacesPlaceItemDto**](WpListResponsePlacesPlaceItemDto.md)
 
 ### Authorization
 
@@ -971,7 +971,7 @@ Name | Type | Description  | Notes
 [[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **api_v1_front_cartes_users_post**
-> ListResponseCartesUserItemDto api_v1_front_cartes_users_post(cartes_list_users_param_dto=cartes_list_users_param_dto)
+> WpListResponseCartesUserItemDto api_v1_front_cartes_users_post(cartes_list_users_param_dto=cartes_list_users_param_dto)
 
 Obtient les utilisateurs partageant leur position et leurs profils (non perdus), exclus l'utilisateur couramment identifié.
 
@@ -984,7 +984,7 @@ Verbe POST pour être compatible avec RestSharp
 ```python
 import wizipet_api
 from wizipet_api.models.cartes_list_users_param_dto import CartesListUsersParamDto
-from wizipet_api.models.list_response_cartes_user_item_dto import ListResponseCartesUserItemDto
+from wizipet_api.models.wp_list_response_cartes_user_item_dto import WpListResponseCartesUserItemDto
 from wizipet_api.rest import ApiException
 from pprint import pprint
 
@@ -1030,7 +1030,7 @@ Name | Type | Description  | Notes
 
 ### Return type
 
-[**ListResponseCartesUserItemDto**](ListResponseCartesUserItemDto.md)
+[**WpListResponseCartesUserItemDto**](WpListResponseCartesUserItemDto.md)
 
 ### Authorization
 
