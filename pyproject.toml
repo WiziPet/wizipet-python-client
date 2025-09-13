@@ -1,6 +1,6 @@
 [project]
 name = "wizipet_api"
-version = "1.0.0"
+version = "1.0.1"
 description = "API - API Front"
 authors = [
   {name = "OpenAPI Generator Community",email = "team@openapitools.org"},
